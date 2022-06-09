@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.807 s - in com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.915 s - in com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplicationTests
