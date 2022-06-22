@@ -12,7 +12,7 @@ spec:
         - name: "eureka-container"
           image: "eureka-image:latest"
           ports:
-            - containerPort: 8080
+            - containerPort: 8761
               protocol: "TCP"
   replicas: 1 
   triggers:
