@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 RUN apt update
-RUN apt install maven
+RUN apt install -y maven
 COPY src /home/app/src
 COPY pom.xml /home/app
 WORKDIR /home/app
