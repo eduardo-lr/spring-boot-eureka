@@ -1,5 +1,4 @@
-FROM openjdk:11-jre-slim
-RUN apt update
+FROM openjdk:16-alpine3.13
 RUN apt install -y maven
 COPY src /home/app/src
 COPY pom.xml /home/app
