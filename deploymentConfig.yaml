@@ -1,16 +1,16 @@
 kind: "DeploymentConfig"
 apiVersion: "v1"
 metadata:
-  name: "simple-webapp-docker"
+  name: "eureka-deployment"
 spec:
   template: 
     metadata:
       labels:
-        name: "simple-webapp-docker"
+        name: "eureka"
     spec:
       containers:
-        - name: "simple-webapp-docker"
-          image: "simple-webapp-docker:latest"
+        - name: "eureka-container"
+          image: "eureka-image:latest"
           ports:
             - containerPort: 8080
               protocol: "TCP"
@@ -21,10 +21,10 @@ spec:
       imageChangeParams:
         automatic: true
         containerNames:
-          - "simple-webapp-docker"
+          - "eureka-container"
         from:
           kind: "ImageStreamTag"
-          name: "simple-webapp-docker:latest"
+          name: "eureka-image:latest"
   strategy: 
     type: "Rolling"
   paused: false 

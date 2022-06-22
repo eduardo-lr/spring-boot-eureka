@@ -1,13 +1,13 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
-  name: my-build-config
+  name: eureka-config
 spec:
   runPolicy: Serial
   source:
       git:
         ref: main
-        uri: 'https://github.com/pablocandela/Hola-Mundo-Spring-Docker.git'
+        uri: 'https://github.com/eduardo-lr/spring-boot-eureka.git'
       type: Git
   strategy:
       dockerStrategy:
@@ -15,6 +15,6 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'simple-webapp-docker:latest'
+      name: 'eureka-image:latest'
   triggers:
     - type: ConfigChange
