@@ -4,7 +4,7 @@ metadata:
   name: servicio-eureka-server  
 spec:
   selector:                  
-    deploymentconfig: simple-webapp-docker
+    deploymentconfig: eureka-deployment
   ports:
   - name: 8761-tcp
     port: 8761               
